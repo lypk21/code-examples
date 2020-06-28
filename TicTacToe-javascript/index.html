@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <ul id="game">
+
+    </ul>
+
+    <input type="number" class="side-length" min="3"  id="side_length" placeholder="enter the side length( must more than 3 )" />
+    <!-- Game Messages -->
+    <div id="game-messages">
+        <span class="player-x-win">Player One Wins</span>
+        <span class="player-o-win">Player Two Wins</span>
+        <span class="draw">Draw Game</span>
+    </div>
+
+    <aside id="nfo">
+        <div>
+            <span>Player 1: X</span> &nbsp;  &nbsp;&nbsp;&nbsp;<span>Player 2: O</span>
+        </div>
+
+        <h2>Score Card</h2>
+        <div id="score">
+            Player 1: <span id="player-one-score">0</span> <br />
+            Player 2: <span id="player-two-score">0</span> <br />
+        </div>
+    </aside>
+</div>
+</body>
+<script src="board.js"></script>
+</html>
