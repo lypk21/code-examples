@@ -24,7 +24,8 @@ class Application
     }
 
     public function getTournament() {
-        if(empty($this->tournament)) $this->tournament = new Tournament();
+        //create singleton for Tournament, make sure only one instance during the life cycle of application
+        if(empty($this->tournament)) $this->tournament = Tournament::getInstance();
         return $this->tournament;
     }
 

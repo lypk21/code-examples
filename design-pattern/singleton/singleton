@@ -1,0 +1,14 @@
+class singleton {
+    private static $_instance;
+
+    private function __construct() {}
+
+    private function __clone() {}
+
+    public function getInstance() {
+        if(!self::$_instance instanceof self) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+}

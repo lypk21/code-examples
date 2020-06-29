@@ -9,6 +9,22 @@ class Tournament
     //a tournament has multiple players, a player is identified by his name
     private $players = [];
 
+    private static $_instance;
+
+    private function __construct()
+    {
+    }
+    private function __clone()
+    {
+    }
+    //singleton
+    public static function getInstance() {
+        if(!self::$_instance instanceof self) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+
     public function addMatch($match) {
         if(!empty($match->getName())) $this->matches[$match->getName()] = $match;
     }
