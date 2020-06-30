@@ -6,8 +6,8 @@ function buy($observer) {
     return true;
 }
 
-//Observed register observer, when event dispatch, if observer's condition is satisfied, it will be trigger and update.
-class Observed {
+//Observee register observer, when event dispatch, if observer's condition is satisfied, it will be trigger and update.
+class Observee {
     private $observers = array();
 
     //register observer
@@ -45,11 +45,11 @@ class SMS implements Observable {
     }
 }
 
-$observed = new Observed();
-$observed->register(new Email());
-$observed->register(new SMS());
-if(buy($observed)) {
-    $observed->trigger();
+$observee = new Observee();
+$observee->register(new Email());
+$observee->register(new SMS());
+if(buy($observee)) {
+    $observee->trigger();
 }
 
 

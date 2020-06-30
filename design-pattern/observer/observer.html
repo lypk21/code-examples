@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Observer</title>
+    <style>
+        .select {
+            margin-bottom: 30px;
+            width: 250px;
+            height: 25px;
+        }
+        .btn {
+            height: 25px;
+            margin-left: 10px;
+        }
+        .content {
+            width: 600px;
+            height: 150px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Observer Change Style</h1>
+<select class="select" name="" >
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+<button class="btn" onclick="detachLastOne()">Detach Last One</button><button class="btn" onclick="attachLastOne()">Attach Last One</button>
+<div class="content" id="content">I am Content</div>
+<div class="content" id="ad">I am advertise</div>
+<div class="content" id="study">I am Study</div>
+<script>
+    var sel = document.getElementsByTagName('select')[0];
+    sel.observers = {}
+    sel.attach = function (key,obj) {
+        this.observers[key] = obj;
+    }
+    sel.detach = function (key) {
+        delete this.observers[key]
+    }
+    sel.onchange = sel.notify = function () {
+        for (let key in this.observers) {
+            this.observers[key].update(this)
+        }
+    }
+    var content = document.getElementById('content')
+    content.update = function(observee) {
+        if(observee.value === 'male') {
+            this.style.backgroundColor = 'grey'
+        } else {
+            this.style.backgroundColor = 'pink'
+        }
+    }
+
+    var ad = document.getElementById('ad')
+    ad.update = function(observee) {
+        if(observee.value === 'male') {
+            this.innerHTML = 'Car'
+        } else {
+            this.innerHTML = 'Fashion'
+        }
+    }
+
+    var study = document.getElementById('study')
+    study.update = function(observee) {
+        if(observee.value === 'male') {
+            this.innerHTML = 'study programming'
+        } else {
+            this.innerHTML = 'study Beauty'
+        }
+    }
+    sel.attach('content',content)
+    sel.attach('ad',ad)
+    sel.attach('study',study)
+
+    function detachLastOne() {
+        sel.detach('study')
+    }
+    function attachLastOne() {
+        sel.attach('study',study)
+    }
+
+</script>
+
+</body>
+</html>
