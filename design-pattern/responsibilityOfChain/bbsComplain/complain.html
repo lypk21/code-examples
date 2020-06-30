@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBS Content Complaint</title>
+    <style>
+        select,button {
+            height: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>Content Complaint</h1>
+<form action="handleChain.php" method="post">
+    <select name="complaint">
+        <option value="1">Foul language</option>
+        <option value="2">Pornography，Gambling, Drug</option>
+        <option value="3">Endanger national security</option>
+    </select>
+    <div>
+        <button type="submit">Report</button>
+    </div>
+</form>
+</body>
+</html>
