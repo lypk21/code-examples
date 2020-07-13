@@ -1,7 +1,6 @@
 <?php
 
-
-class Player
+class Player implements PlayerInterface
 {
     private $name;
     private $winGames = 0; //the number of win games in a tournament

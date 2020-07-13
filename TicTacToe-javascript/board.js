@@ -1,4 +1,4 @@
-(function Game() {
+(function() {
     // Elements
     var game = document.getElementById('game');
     var boxes = [];
@@ -28,7 +28,7 @@
         for(var i = 0; i < side_length; i++) {
             board[i] = new Array(side_length);
         }
-        console.log(board);
+
         // create box and bind events
         for(var i = 0; i < side_length;  i++) {
             for( var j = 0; j < side_length; j++) {
@@ -119,8 +119,10 @@
         }
     }
 
-
+   //initial setup
     game && Board(5);
+
+    //when box size change, init variables
     side_length.onchange = function () {
         //clear the exist data
         game.innerHTML = "";

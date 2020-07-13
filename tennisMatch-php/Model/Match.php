@@ -1,11 +1,12 @@
 <?php
 
+require_once 'PlayerInterface.php';
 
 class Match
 {
     //a match has two players
-    private  $playerA;
-    private  $playerB;
+    private   $playerA;
+    private   $playerB;
 
     //match name
     private  $name;
@@ -41,7 +42,7 @@ class Match
         return $this->playerA;
     }
 
-    public function setPlayerA($playerA) {
+    public function setPlayerA(PlayerInterface $playerA) {
         $this->playerA = $playerA;
     }
 
@@ -49,7 +50,7 @@ class Match
         return $this->playerB;
     }
 
-    public function setPlayerB($playerB) {
+    public function setPlayerB(PlayerInterface $playerB) {
         $this->playerB = $playerB;
     }
 

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95aef08c-0b6e-4c08-8d17-1b6b7a531210" name="Default Changelist" comment="" />
+    <list default="true" id="95aef08c-0b6e-4c08-8d17-1b6b7a531210" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/PlayerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe-javascript/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe-javascript/board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Match.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Match.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Player.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Player.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +19,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1dP2JbJgo5CHFQPsBh1Af9fhr4k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -66,6 +78,7 @@
       <workItem from="1592312337491" duration="15274000" />
       <workItem from="1592386490478" duration="31398000" />
       <workItem from="1593330763657" duration="17074000" />
+      <workItem from="1594259618781" duration="867000" />
     </task>
     <servers />
   </component>
@@ -83,9 +96,10 @@
     </state>
     <state x="458" y="258" key="NewPhpClassDialog/0.23.1440.829@0.23.1440.829" timestamp="1593339358542" />
     <state x="560" y="197" key="NewPhpClassDialog/0.23.1440.830@0.23.1440.830" timestamp="1592436087442" />
-    <state x="541" y="365" key="NewPhpFileDialog" timestamp="1592369537663">
-      <screen x="0" y="23" width="1440" height="830" />
+    <state x="541" y="364" key="NewPhpFileDialog" timestamp="1594259721357">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state x="541" y="364" key="NewPhpFileDialog/0.23.1440.828@0.23.1440.828" timestamp="1594259721357" />
     <state x="541" y="365" key="NewPhpFileDialog/0.23.1440.829@0.23.1440.829" timestamp="1592357892507" />
     <state x="541" y="365" key="NewPhpFileDialog/0.23.1440.830@0.23.1440.830" timestamp="1592369537663" />
   </component>
