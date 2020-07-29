@@ -4,7 +4,8 @@ I resolve the question by PHP using Terminal to input the filename and output th
 
 php files explain:
 index.php : entry file of the Application
-Application.php: handle the business logic, including analyzing the input commands from Terminal,analyzing line by line and generating results.
+Application.php:  read the input commands from Terminal and initialize models.
+MatchProcess.php: handle the tennis score calculation logic,
 Model/Player.php:  entity of Player, store data and result.
 Model/Match.php:  entity of Match, store some data and result.
 Model/Tournament.php: entity of Tournament, store Matches and Players
